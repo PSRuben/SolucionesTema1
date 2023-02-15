@@ -24,4 +24,13 @@ head (robustbase::Animals2)
 tail(robustbase::Animals2)
 str(robustbase::Animals2)
 ```
+C
+
+```{r}
+rownames(MASS::Animals)
+colnames(MASS::Animals)
+rownames(robustbase::Animals2)
+colnames(robustbase::Animals2)
+```
+
 
