@@ -34,12 +34,19 @@ colnames(robustbase::Animals2)
 ```
 D
 ```{r}
-commonAnimals<- dplyr::intersect((MASS::Animals),(robustbase::Animals2))
+commonAnimals<- dplyr::intersect(rownames(MASS::Animals),rownames(robustbase::Animals2))
 commonAnimals
 ```
 
 E
+
+Son 37, son animales menos comunes que los que si coinciden en ambos conjuntos.
+
 ```{r}
-setdiff((MASS::Animals),(robustbase::Animals2))
+setdiff(rownames(robustbase::Animals2),rownames(MASS::Animals))
 ```
+
+F
+
+Son animales menos comunes
 
