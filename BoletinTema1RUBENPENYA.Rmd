@@ -77,6 +77,15 @@ B
 ```{r}
 is.na(MASS::cabbages)
 ```
+C
+```{r}
+??carData::CHile
+dim(carData::Chile)
+head(carData::Chile)
+tail(carData::Chile)
+str (carData::Chile)
+is.na(carData::Chile)
+```
 
 
 
