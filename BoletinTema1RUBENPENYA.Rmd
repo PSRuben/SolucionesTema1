@@ -91,3 +91,14 @@ D
 summary(MASS::cabbages)
 summary(carData::Chile)
 ```
+Ejercicio 6
+
+Se pueden apreciar cambios en la vitanima 
+```{r}
+massca<-data.frame(MASS::cabbages)
+histo<-split(massca,massca$Cult)
+hist(histo$c39$VitC)
+hist(histo$c52$VitC)
+
+```
+
