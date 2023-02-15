@@ -101,4 +101,36 @@ hist(histo$c39$VitC)
 hist(histo$c52$VitC)
 
 ```
+Ejercicio 7
+
+```{r}
+#Diagrama de dispersión global.
+plot(MASS::whiteside$Temp, MASS::whiteside$Gas)
+#Diagrama de dispersión etiquetando según un factor.
+plot(MASS::whiteside$Temp, MASS::whiteside$Gas, pch=c(6,16)[MASS::whiteside$Insul])
+legend(x="topright",legend=c("Insul = Before","Insul = After"), pch=c(6,16))
+# Planteamos 2 modelos lineales, uno para los datos de cada factor
+Model1 <- lm(Gas ~ Temp, data = MASS::whiteside, subset = which(Insul == "Before"))
+Model2 <- lm(Gas ~ Temp, data = MASS::whiteside, subset = which(Insul == "After"))
+# Representamos las rectas correspondientes a cada modelo lineal
+abline(Model1, lty=2)
+abline(Model2)
+
+```
+```{r}
+#Diagrama de dispersión global.
+plot(MASS::cabbages$VitC, MASS::cabbages$HeadWt)
+#Diagrama de dispersión etiquetando según un factor.
+plot(MASS::cabbages$VitC, MASS::cabbages$HeadWt, pch=c(6,16))
+legend(x="topright", pch=c(6,16))
+# Planteamos 2 modelos lineales, uno para los datos de cada factor
+Model2 <- lm(VitC ~ HeadWt, data = MASS::cabbages)
+# Representamos las rectas correspondientes a cada modelo lineal
+abline(Model2)
+```
+Ejercicio 7 C
+
+```{r}
+summary(Model2)
+```
 
