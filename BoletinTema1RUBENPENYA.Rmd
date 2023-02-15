@@ -86,6 +86,8 @@ tail(carData::Chile)
 str (carData::Chile)
 is.na(carData::Chile)
 ```
-
-
-
+D
+```{r}
+summary(MASS::cabbages)
+summary(carData::Chile)
+```
