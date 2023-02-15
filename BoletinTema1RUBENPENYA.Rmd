@@ -50,3 +50,11 @@ F
 
 Son animales menos comunes
 
+Ejercicio 2
+
+```{r}
+install.packages("qqPlot")
+```
+
+
+
