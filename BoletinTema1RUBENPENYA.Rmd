@@ -55,6 +55,22 @@ Ejercicio 2
 ```{r}
 install.packages("qqPlot")
 ```
+El qqPlot no me funciona
 
+Ejercicio 3
+```{r}
+library()
+libReturn<-71
+head(library)
+```
+
+Ejercicio 4 A
+```{r}
+??MASS::cabbages
+dim(MASS::cabbages)
+head(MASS::cabbages)
+tail(MASS::cabbages)
+str(MASS::cabbages)
+```
 
 
