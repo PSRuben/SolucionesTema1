@@ -5,8 +5,23 @@ date: "2023-02-15"
 output: html_document
 ---
 
+Ejercicio 1 
+
+A
+
 ```{r}
 ??MASS
 ??Animals2
+```
+B
+```{r}
+dim(MASS::Animals)
+head(MASS::Animals)
+tail(MASS::Animals)
+str(MASS::Animals)
+dim(robustbase::Animals2)
+head (robustbase::Animals2)
+tail(robustbase::Animals2)
+str(robustbase::Animals2)
 ```
 
