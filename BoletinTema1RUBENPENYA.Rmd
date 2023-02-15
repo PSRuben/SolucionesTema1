@@ -38,3 +38,8 @@ commonAnimals<- dplyr::intersect((MASS::Animals),(robustbase::Animals2))
 commonAnimals
 ```
 
+E
+```{r}
+setdiff((MASS::Animals),(robustbase::Animals2))
+```
+
