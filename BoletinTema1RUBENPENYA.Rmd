@@ -32,5 +32,9 @@ colnames(MASS::Animals)
 rownames(robustbase::Animals2)
 colnames(robustbase::Animals2)
 ```
-
+D
+```{r}
+commonAnimals<- dplyr::intersect((MASS::Animals),(robustbase::Animals2))
+commonAnimals
+```
 
