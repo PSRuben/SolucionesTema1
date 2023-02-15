@@ -73,4 +73,10 @@ tail(MASS::cabbages)
 str(MASS::cabbages)
 ```
 
+B
+```{r}
+is.na(MASS::cabbages)
+```
+
+
 
